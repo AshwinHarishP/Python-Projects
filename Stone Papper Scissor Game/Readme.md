@@ -7,4 +7,5 @@ We all played rock paper scissor game during childhood times,this program works 
 4. If both the player chooses the same option then it will be draw. 
                                                           How does the game works?
 This game will be performed by applying the above rules.
-It will also displays the number of times user and computer wins the match.
+It will display the number of times user and computer wins the match.
+It will also shows who won the entire match.
