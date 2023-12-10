@@ -1,0 +1,80 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <script defer src="/static/app.js"></script>
+
+    <title>Banking App</title>
+</head>
+<body class="background-container">
+<div>
+    <h1>Banking Management Application</h1>
+    <div class="card">
+        <h2>Create New Account</h2>
+        <label for="accountNumber">Account Number:</label>
+        <input type="text" id="accountNumber" name="accountNumber">
+        <br>
+        <label for="accountHolderName">Account Holder's Name:</label>
+        <input type="text" id="accountHolderName" name="accountHolderName">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <button onclick="createAccount()">Create Account</button>
+    </div>
+
+
+<div class="card">
+    <h2>Deposit</h2>
+    <label for="depositAccountNumber">Account Number:</label>
+    <input type="text" id="depositAccountNumber" name="depositAccountNumber">
+    <br>
+    <label for="depositPassword">Password:</label>
+    <input type="password" id="depositPassword" name="depositPassword">
+    <br>
+    <label for="depositAmount">Deposit Amount:</label>
+    <input type="text" id="depositAmount" name="depositAmount">
+    <br>
+    <button onclick="deposit()">Deposit</button>
+</div>
+
+<div class="card">
+    <h2>Withdraw</h2>
+    <label for="withdrawAccountNumber">Account Number:</label>
+    <input type="text" id="withdrawAccountNumber" name="withdrawAccountNumber">
+    <br>
+    <label for="withdrawPassword">Password:</label>
+    <input type="password" id="withdrawPassword" name="withdrawPassword">
+    <br>
+    <label for="withdrawalAmount">Withdrawal Amount:</label>
+    <input type="text" id="withdrawalAmount" name="withdrawalAmount">
+    <br>
+    <button onclick="withdraw()">Withdraw</button>
+</div>
+
+<div class="card">
+    <h2>View Balance</h2>
+    <label for="balanceAccountNumber">Account Number:</label>
+    <input type="text" id="balanceAccountNumber" name="balanceAccountNumber">
+    <br>
+    <label for="balancePassword">Password:</label>
+    <input type="password" id="balancePassword" name="balancePassword">
+    <br>
+    <button onclick="viewBalance()">View Balance</button>
+</div>
+
+<div class="">
+    <h2>View All Accounts</h2>
+    <button onclick="viewAllAccounts()">View All Accounts</button>
+
+</div>
+</div>
+    <script src="app.js"></script>
+
+</body>
+</html>
