@@ -28,6 +28,10 @@ This repository contains a collection of Python projects designed for both fun a
 8. **Password Generator:**
    - Create strong and secure passwords effortlessly.
 
+9. **Banking Management Application**
+
+   - A simple web application built with Flask and Bootstrap for managing bank accounts. Users can create new accounts, deposit and withdraw money, view balances, and see a list of all accounts.
+
 ## How to Run:
 
 1. Clone the repository to your local machine.
